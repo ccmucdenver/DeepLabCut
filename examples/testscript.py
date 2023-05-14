@@ -36,6 +36,9 @@ from deeplabcut.utils import auxiliaryfunctions
 
 import random
 
+import tensorflow as tf
+tf.debugging.set_log_device_placement(True) 
+
 USE_SHELVE = random.choice([True, False])
 MODELS = ["resnet_50", "efficientnet-b0", "mobilenet_v2_0.35"]
 
